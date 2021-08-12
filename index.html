@@ -70,10 +70,13 @@
 			
 			if(n>=70)
 			{
-				alert("Your love percentage is " + n + " . You are made for eachother");
-			}else
-			{
-				alert("Your love percentage is " + n)
+				document.getElementById("Result").innerHTML= "Your love percentage is " + n + " . You are made for eachother";
+
+			}else if (n<70 && n>=50)
+			{document.getElementById("Result").innerHTML= "Your love percentage is " + n +".ummm! Might be possible if you try hard";
+			}
+			else {
+				document.getElementById("Result").innerHTML= "Your love percentage is " + n +". Better find someone else!";
 			}
 		 }
 		 
