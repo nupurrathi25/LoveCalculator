@@ -1,0 +1,85 @@
+<html>
+
+	<head>
+
+		<title>Love Calculator</title>
+		
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<style>
+			
+			body{
+				
+				background-color:#FE66B4;
+				
+				
+			}
+			.container{
+				padding :10px 20px;
+				background-color:#FEC1D6;
+				//color:#fff;
+			}
+			
+			h1{
+			font-family: 'Palette Mosaic', cursive;
+			font-family: 'WindSong', cursive;
+			font-size: 3rem;
+			color:black;
+			}
+			span{
+				color:red;
+			}
+			h2{
+				font-family: 'MonteCarlo', cursive;
+			}
+			p{
+				
+				font-size:1.5em;
+				font-family: 'Style Script', cursive;
+			
+			}
+			
+			#but{
+				border-radius:50%;
+				background-color:red;
+				padding: 32px 32px;
+				color:#fff;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class= "container">
+		<h1>This is <span>Love</span> Calculator</h1>
+		<h2> Made by Nup</h2>
+		<p>Enter your name : <input id="name" type="text"></input></p>
+		<p>Enter name of yor crush : <input id="hisName" type="text"></input></p>
+		<button id="but">Guess!</button>
+		</div>
+	
+	</body>
+	<script type="text/javascript">
+		 document.getElementById("but").onclick = function (){
+			
+			var n= Math.random();
+			n = n*100 +1;
+			n = Math.floor(n);
+			
+			if(n>=70)
+			{
+				alert("Your love percentage is " + n + " . You are made for eachother");
+			}else
+			{
+				alert("Your love percentage is " + n)
+			}
+		 }
+		 
+		 
+		
+		
+	
+	</script>
+</html>
