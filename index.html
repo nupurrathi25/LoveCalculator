@@ -3,24 +3,24 @@
 	<head>
 
 		<title>Love Calculator</title>
-		
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<style>
-			
+
 			body{
-				
+
 				background-color:#FE66B4;
-				
-				
+
+
 			}
 			.container{
-				padding :50px 50px;
+				padding :10px 20px;
 				background-color:#FEC1D6;
 				//color:#fff;
 			}
-			
+
 			h1{
 			font-family: 'Palette Mosaic', cursive;
 			font-family: 'WindSong', cursive;
@@ -34,23 +34,23 @@
 				font-family: 'MonteCarlo', cursive;
 			}
 			p{
-				
+
 				font-size:1.5em;
 				font-family: 'Style Script', cursive;
-			
+
 			}
-			
+
 			#but{
 				border-radius:50%;
 				background-color:red;
 				padding: 32px 32px;
 				color:#fff;
 			}
-			
+
 		</style>
-		
+
 	</head>
-	
+
 	<body>
 		<div class= "container">
 		<h1>This is <span>Love</span> Calculator</h1>
@@ -59,15 +59,18 @@
 		<p>Enter name of yor crush : <input id="hisName" type="text"></input></p>
 		<button id="but">Guess!</button>
 		</div>
-	
+
+		<p id="Result">Your Result Here</p>
+
+
 	</body>
 	<script type="text/javascript">
 		 document.getElementById("but").onclick = function (){
-			
+
 			var n= Math.random();
 			n = n*100 +1;
 			n = Math.floor(n);
-			
+
 			if(n>=70)
 			{
 				document.getElementById("Result").innerHTML= "Your love percentage is " + n + " . You are made for eachother";
@@ -75,17 +78,16 @@
 			}
 			 else if (n<70 && n>=50)
 			{
-				document.getElementById("Result").innerHTML= "Your love percentage is " + n +".ummm! Might be possible if you try hard";
+				document.getElementById("Result").innerHTML= "Your love percentage is " + n +". ummm! Might be possible if you try hard";
 			}
-			else 
-			{
+			else {
 				document.getElementById("Result").innerHTML= "Your love percentage is " + n +". Better find someone else!";
 			}
 		 }
-		 
-		 
-		
-		
-	
+
+
+
+
+
 	</script>
 </html>
